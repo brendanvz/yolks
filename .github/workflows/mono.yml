@@ -32,7 +32,7 @@ jobs:
         with:
           context: ./mono
           file: ./mono/${{ matrix.tag }}/Dockerfile
-          platforms: linux/amd64
+          platforms: linux/arm64
           push: true
           tags: |
-            ghcr.io/parkervcp/yolks:mono_${{ matrix.tag }}
+            ghcr.io/brendanvz/yolks:mono_${{ matrix.tag }}
